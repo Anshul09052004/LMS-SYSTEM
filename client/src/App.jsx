@@ -11,12 +11,14 @@ import Dashboard from './Pages/Educator/Dashboard'
 import AddCourse from './Pages/Educator/AddCourse'
 import MyCourses from './Pages/Educator/MyCourses'
 import StudentEnrolled from './Pages/Educator/StudentEnrolled'
+import Navbar from './Components/Student/Navbar'
 
 function App() {
 
   return (
     <>
       <div>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/course-list' element={<CoursesList />} />
